@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shibaz Hussain</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/26ac2a5292.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class= "name">
+            <img class = "logo" src="./Resources/logo-transparent-white-30pt.png"/> 
+                <p>SHIBAZ HUSSAIN</p>    
+        </div>
+        <button class="nav_toggle" aria-expanded="false"><i class="fa-solid fa-bars fa-2x burger-nav" style="color:#fff" ></i></button>
+        <ul class = "nav_bar" data-visible="false">
+            <li ><a href="#about" class="navlink">ABOUT</a></li>
+            <li ><a href="#experience" class="navlink">EXPERIENCE</a></li>
+            <li ><a href="#projects" class="navlink">PROJECTS</a></li>
+            <li ><a href="#contact" class="navlink">CONTACT</a></li>
+            <!-- see video https://www.youtube.com/watch?v=HbBMp6yUXO0 -->
+        </ul>
+    </nav>
+    <!-- introduction-->
+    <section class="intro">
+       <div class = "intro_overlay">
+            <div class = "intro_content">
+                <h1>HI, I'M SHIBAZ</h1>
+                <p>London based Front End Developer</p>
+            </div>  
+        </div>          
+    </section>
+    <!-- about me -->
+    <section class="about" > 
+        <div class="about_container" id="about">
+            <h1>ABOUT ME</h1>
+            <img src="./Resources/IMG_3599.jpg" alt="An image of a cool developer" id="profile-pic">
+            <p>Hello there! My name is Shibaz and I'm currently learning how to become a Front End Developer during the worst possible economic climate and job market for developers. My current day job is helping founders raise capital or to assist them with exits. I aspire toward a career that will allow me to channel my creativity through crafting software and engaging experiences. <br> <br>When I'm not on the computer, I enjoy lifting weights, eating copious amounts of ice cream & gaming... </p>
+        </div>     
+    </section>
+    <!-- experience section-->
+    <section class="experience">
+        <div class="experience_container" id="experience">
+            <h1>EXPERIENCE</h1>
+            <p>I've been learning front end development since December 2023 via online resources, and I'm always eager to learn more.</p>
+            <h3>SOME TECHNOLOGIES I'VE WORKED WITH SO FAR:</h3>
+            <div class="experience_icons">
+                <i class="fa-brands fa-html5 fa-4x"></i>
+                <i class="fa-brands fa-css3-alt fa-4x"></i>
+                <i class="fa-brands fa-js fa-4x"></i>
+                <i class="fa-solid fa-terminal fa-4x"></i>
+                <i class="fa-brands fa-git fa-4x"></i>
+                <i class="fa-brands fa-github fa-4x"></i>
+            </div>
+        </div>
+    </section>
+    <section class ="projects">
+        <div class ="projects_container" id="projects">
+            <h1>WHAT I'VE DONE</h1>
+            <p>Including this portfolio page that you're looking at (no libraries were used, just raw html and css)</p>
+                <div class = "img_container">
+                    <div class="item_overlay1"> 
+                        <img  class="img1" src="./Resources/message gen.png"/>
+                        <div class ="overlay1" id="button1"><p>MESSAGE GENERATOR</p></div>  <!-- Modal Start -->
+                        <dialog class="modal1">                                             
+                            <div class="modal_header">
+                                <h4>Message Generator</h4>
+                            </div>
+                            <div class="modal_body">                                        <!-- Modal Body-->
+                                <div class="modal_img_container">
+                                    <img class="img2" src="./Resources/message gen.png"/>
+                                </div>
+                                <p>This JavaScript project generates a random message every time a user runs the program. For this project I manipulated objects and arrays combined with functions to string together the random message. I ended up using the script to create a 'random day off message planner' which randomly selects what I should do and eat on my day off.</p>
+                                <div id="visit_container">
+                                    <p id="visit"><a  id="visit_link" href="https://github.com/Shibaz98/random_message_generator" target="_blank"> VIEW SOURCE</a></p>
+                                </div>
+                            </div>
+                            <div class="modal_footer">
+                                <button class="close-button">Close</button>
+                            </div>
+                        </dialog>                                                        <!-- Modal End-->
+                   </div> 
+                    <div class="item_overlay2">
+                        <img class ="img3" src="./Resources/valentines.png"/>
+                        <div class ="overlay2" id="button2"><p>BE MY VALENTINE?</p></div> <!-- SECOND Modal Start-->
+                        <dialog class="modal2">                                             
+                            <div class="modal_header">
+                                <h4>Be my valentine?</h4>
+                            </div>
+                            <div class="modal_body">                                        <!-- Modal Body-->
+                                <div class="modal_img_container">
+                                    <img src="./Resources/valentines.png"/>
+                                </div>
+                                <p>At the time of making this project, it was almost valentines day. With that in mind and my new found knowledge of query selectors, I created a way to ask my wife if she would like to be my valentine using the romantic love language of JavaScript.</p>
+                                <div id="visit_container">
+                                    <p id="visit"><a  id="visit_link" href="https://github.com/Shibaz98/shibazValentines" target="_blank"> VIEW SOURCE</a></p>
+                                </div>
+                            </div>
+                            <div class="modal_footer">
+                                <button class="close-button2">Close</button>
+                            </div>
+                        </dialog>                                                        <!-- Modal End-->
+                    </div>
+                    <div class="item_overlay3"> 
+                        <img src="./Resources/credit card checker.png"/>
+                        <div class ="overlay3" id="button3"><p>CREDIT CARD VALIDATOR</p></div>
+                        <dialog class="modal3">                                             
+                            <div class="modal_header">
+                                <h4>Credit Card Validator</h4>
+                            </div>
+                            <div class="modal_body">                                        <!-- Modal Body-->
+                                <div class="modal_img_container">
+                                    <img src="./Resources/credit card checker.png"/>
+                                </div>
+                                <p>This project takes in an array of card numbers and checks if the card is valid and checks who the issuing company is using a luhn algorithim. Here I was able to flex my array iteration skills by manually implementing an algorithim. I'm not gonna lie I initially struggled with this one but it always feels cool to say I implemented an algorithim in JavaScript. </p>
+                                <div id="visit_container">
+                                    <p id="visit"><a  id="visit_link" href="https://github.com/Shibaz98/creditcardchecker" target="_blank"> VIEW SOURCE</a></p>
+                                </div>
+                            </div>
+                            <div class="modal_footer">
+                                <button class="close-button3">Close</button>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+        </div>    
+    </section>
+    <section class="contact">
+        <div class="contact_container" id="contact">
+            <i class="fa-regular fa-paper-plane fa-5x"></i>
+            <h1>GET IN TOUCH!</h1>
+            <p>Whether you want to hire me (please) or just want to chat, <br>feel free to drop me an email!</p>
+            <p><a id="email_button" href="mailto:shibaz98@gmail.com" target="_blank">Say Hello<a></p> 
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">       
+            <a href=https://www.linkedin.com/in/shibaz-hussain-569749150 target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/Shibaz98/" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+           <a href="mailto:shibaz98@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+        </div>
+        <p>Shibaz Hussain 2024 :)</p>        
+    </footer>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
