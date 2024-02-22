@@ -572,7 +572,7 @@ color: inherit;
     }
 
     ul{
-        background-color:  hsl(0, 0%, 100% 0.1);
+        background-color:  rgb(0,0,0,0.3);
         backdrop-filter: blur(3rem);
     }
 
